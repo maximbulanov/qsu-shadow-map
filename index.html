@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Survival Civics: Shadow Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="map-container">
+        <img src="assets/room-photo.jpg" alt="QSU Office Space" class="main-image">
+
+        <button class="hotspot" style="top: 60%; left: 20%;" onclick="openModal('modal-boxes')">
+            📂
+        </button>
+
+        <button class="hotspot" style="top: 40%; left: 80%;" onclick="openModal('modal-printer')">
+            🖨️
+        </button>
+        
+        <button class="hotspot" style="top: 50%; left: 50%;" onclick="openModal('modal-audio')">
+            🎶
+        </button>
+    </div>
+
+    <div id="modal-boxes" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-boxes')">&times;</span>
+            <h2>The Archive of Fragility</h2>
+            <img src="assets/boxes.jpg" style="width:100%">
+            <p>"We’re the last queer space right now..."</p>
+            <p><i>The literal remnants of the closed Center stored in cardboard boxes[cite: 152].</i></p>
+        </div>
+    </div>
+    
+    <div id="modal-audio" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-audio')">&times;</span>
+            <h2>Ephemeral Intimacy</h2>
+            <p>Listen to the sound of the Karaoke night.</p>
+            <audio controls>
+                <source src="assets/karaoke_clip.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
